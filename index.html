@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Chrona â€” Age Calculator</title>
+<title>Chrona - Age Calculator</title>
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0F172A">
 <meta name="mobile-web-app-capable" content="yes">
@@ -325,13 +325,13 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
             <div style="position:absolute;bottom:14px;left:6px;width:10px;height:10px;border-radius:50%;background:var(--acc2,#A855F7);box-shadow:0 0 14px var(--acc2,#A855F7);animation:blob 9s ease-in-out infinite reverse"></div>
           </div>
           <div class="ob-title">Time, beautifully<br>measured</div>
-          <div class="ob-body">Your exact age â€” down to the very second â€” computed instantly, rendered gorgeously.</div>
+          <div class="ob-body">Your exact age, down to the very second, computed instantly and rendered gorgeously.</div>
         </div>
         <div class="ob-slide">
           <div class="ob-art">
-            <div class="ob-chip" style="top:20px;left:10px;color:var(--cy,#22D3EE);animation:blob 8s ease-in-out infinite">â™Œ Leo</div>
+            <div class="ob-chip" style="top:20px;left:10px;color:var(--cy,#22D3EE);animation:blob 8s ease-in-out infinite">♌ Leo</div>
             <div class="ob-chip" style="bottom:44px;right:0;color:var(--acc2,#A855F7);animation:blob 10s ease-in-out infinite reverse">1.1B beats</div>
-            <div class="ob-chip" style="bottom:0;left:26px;color:var(--acc,#6366F1);animation:blob 12s ease-in-out infinite">é¾™ Dragon</div>
+            <div class="ob-chip" style="bottom:0;left:26px;color:var(--acc,#6366F1);animation:blob 12s ease-in-out infinite">龙 Dragon</div>
             <div style="width:72px;height:72px;border-radius:26px;background:linear-gradient(135deg,var(--acc2,#A855F7),var(--cy,#22D3EE));box-shadow:0 16px 44px rgba(168,85,247,.4);display:flex;align-items:center;justify-content:center">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.2 5 5.3.5-4 3.6 1.2 5.2L12 14.5 7.3 17.3l1.2-5.2-4-3.6 5.3-.5z"/></svg>
             </div>
@@ -404,7 +404,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
             <div class="tile glass" style="animation-delay:.2s"><div class="tv" id="v-days">0</div><div class="tl">Days</div></div>
             <div class="tile glass" style="animation-delay:.26s"><div class="tv sm" id="v-hours">0</div><div class="tl">Hours</div></div>
             <div class="tile glass" style="animation-delay:.32s"><div class="tv sm" id="v-minutes">0</div><div class="tl">Minutes</div></div>
-            <div class="tile live" style="animation-delay:.38s"><div class="tv" id="v-seconds">0</div><div class="tl">Seconds Â· live</div></div>
+            <div class="tile live" style="animation-delay:.38s"><div class="tv" id="v-seconds">0</div><div class="tl">Seconds · live</div></div>
           </div>
           <div id="decoded-hd">Your time, decoded</div>
           <div id="decoded">
@@ -509,7 +509,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
             <svg width="7" height="12" viewBox="0 0 8 14"><path d="M1 1l6 6-6 6" stroke="var(--sub,rgba(226,232,240,.35))" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
         </div>
-        <div id="set-foot">Chrona 1.1 Â· crafted with care</div>
+        <div id="set-foot">Chrona 1.1 · crafted with care</div>
       </div>
     </div>
 
@@ -700,12 +700,12 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
 
   /* ---------- zodiac / facts ---------- */
   function zodiac(d, m) {
-    var s = [['Aquarius','â™’',20],['Pisces','â™“',19],['Aries','â™ˆ',21],['Taurus','â™‰',20],['Gemini','â™Š',21],['Cancer','â™‹',21],['Leo','â™Œ',23],['Virgo','â™',23],['Libra','â™Ž',23],['Scorpio','â™',23],['Sagittarius','â™',22],['Capricorn','â™‘',22]];
+    var s = [['Aquarius','♒',20],['Pisces','♓',19],['Aries','♈',21],['Taurus','♉',20],['Gemini','♊',21],['Cancer','♋',21],['Leo','♌',23],['Virgo','♍',23],['Libra','♎',23],['Scorpio','♏',23],['Sagittarius','♐',22],['Capricorn','♑',22]];
     return d >= s[m - 1][2] ? s[m - 1] : s[(m + 10) % 12];
   }
   function chinese(y) {
     var a = ['Rat','Ox','Tiger','Rabbit','Dragon','Snake','Horse','Goat','Monkey','Rooster','Dog','Pig'];
-    var h = ['é¼ ','ç‰›','è™Ž','å…”','é¾™','è›‡','é©¬','ç¾Š','çŒ´','é¸¡','ç‹—','çŒª'];
+    var h = ['鼠','牛','虎','兔','龙','蛇','马','羊','猴','鸡','狗','猪'];
     var i = ((y - 4) % 12 + 12) % 12; return [a[i], h[i]];
   }
 
@@ -724,7 +724,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
     var facts = [
       "You've watched roughly " + fN(moons) + " full moons rise since the day you were born.",
       "Riding planet Earth, you've already traveled about " + fN(km) + " million km around the Sun.",
-      "You've taken an estimated " + fN(totalDays * 23040) + " breaths â€” nearly all of them on autopilot.",
+      "You've taken an estimated " + fN(totalDays * 23040) + " breaths, nearly all of them on autopilot.",
       "Your hair has grown around " + fN(Math.round(totalDays * 0.044)) + " cm in total. That's a lot of haircuts."
     ];
     return {
@@ -758,7 +758,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
     var circ = 2 * Math.PI * 26, pct = Math.max(0, 1 - r.bdDays / 365);
     $('bd-ring').setAttribute('stroke-dasharray', (pct * circ).toFixed(1) + ' ' + circ.toFixed(1));
     $('bd-in').textContent = r.bdDays + 'd';
-    $('bd-line').textContent = r.bdDate + " â€” that's a " + r.bdDow + ', ' + r.bdDays + ' days from now';
+    $('bd-line').textContent = r.bdDate + ", a " + r.bdDow + ', ' + r.bdDays + ' days from now';
     $('born-dow').textContent = r.bornDow;
     $('zod-sym').textContent = r.zodSym; $('zod-name').textContent = r.zodName;
     $('cz-han').textContent = r.czHan; $('cz-name').textContent = r.czName;
@@ -897,7 +897,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
   });
 
   var STAR = '<path d="M12 3l2.6 5.3 5.9.9-4.3 4.1 1 5.9L12 16.4l-5.2 2.8 1-5.9L3.5 9.2l5.9-.9z"/>';
-  function ageStr(h) { return h.years + ' yrs Â· ' + h.months + ' mo Â· ' + h.days + ' d'; }
+  function ageStr(h) { return h.years + ' yrs · ' + h.months + ' mo · ' + h.days + ' d'; }
 
   function renderHistory() {
     var list = $('hist-list');
@@ -962,7 +962,7 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
       });
       sw.appendChild(el);
     });
-    var speeds = [{ label: '0.5Ã—', v: 2 }, { label: '1Ã—', v: 1 }, { label: '2Ã—', v: 0.5 }];
+    var speeds = [{ label: '0.5×', v: 2 }, { label: '1×', v: 1 }, { label: '2×', v: 0.5 }];
     var sp = $('speeds');
     sp.innerHTML = '';
     speeds.forEach(function (o) {
@@ -983,8 +983,8 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
     haptic();
     var r = S.result;
     var txt = r
-      ? 'Chrona â€” ' + fmt(S.dob) + ' â†’ ' + fmt(S.today) + ': ' + r.years + 'y ' + r.months + 'm ' + r.days + 'd (' + fN(r.totalDays) + ' days)'
-      : 'Chrona â€” no calculation yet';
+      ? 'Chrona - ' + fmt(S.dob) + ' → ' + fmt(S.today) + ': ' + r.years + 'y ' + r.months + 'm ' + r.days + 'd (' + fN(r.totalDays) + ' days)'
+      : 'Chrona - no calculation yet';
     var done = function () { toast('Results copied to clipboard'); };
     try {
       navigator.clipboard.writeText(txt).then(done, function () {
@@ -1131,8 +1131,8 @@ body{margin:0;min-height:100vh;display:grid;place-items:center;background:#05070
 
   /* ---------- AdMob (native app only) ----------
      Ad units are controlled REMOTELY: on every launch the app fetches
-     AD_CONFIG_URL (a JSON file you host) and obeys it â€” swap ad IDs,
-     change interstitial frequency, or set adsEnabled:false, all without
+     AD_CONFIG_URL (a JSON file you host) and obeys it, letting you swap
+     ad IDs, change interstitial frequency, or set adsEnabled:false, all without
      an app update. Falls back to the last-fetched config offline, or to
      Google's official TEST ads if nothing has ever loaded.
      GDPR/UK consent (Google's UMP SDK) is requested before any ad loads;

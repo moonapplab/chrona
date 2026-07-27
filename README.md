@@ -1,16 +1,16 @@
-# Chrona — installable web app (for iPhone, works on Android too)
+# Chrona: installable web app (for iPhone, works on Android too)
 
 This folder is a complete PWA: fullscreen, offline-capable, home-screen icon,
 plus the SEO-optimized public website for the app (title/description tags,
 Open Graph, structured data, robots.txt, sitemap.xml) and its privacy policy.
 It needs to be on an HTTPS site once; GitHub Pages is free.
 
-## Nothing left to fill in — just host it
+## Nothing left to fill in, just host it
 `privacy.html` already has the real date and support email
 (MoonAppsLab@protonmail.com). Every URL in this folder (SEO tags,
 `robots.txt`, `sitemap.xml`, and the app's own
 `AD_CONFIG_URL`/`PRIVACY_POLICY_URL`) is already set to
-`https://moonapplab.github.io/chrona/` — as long as you host this under a
+`https://moonapplab.github.io/chrona/`, as long as you host this under a
 repo named exactly `chrona` on the `moonapplab` account, no URL changes
 are needed.
 
@@ -32,8 +32,8 @@ The Chrona icon appears on the home screen and opens fullscreen, works offline.
 Open the URL in **Chrome** → menu (⋮) → **Add to Home screen** / **Install app**.
 
 ## Updating
-Run `powershell -File build.ps1` after editing `..\chrona-age-calculator\index.html`
-— it rebuilds `index.html` with the SEO/PWA tags and automatically bumps the
+Run `powershell -File build.ps1` after editing `..\chrona-age-calculator\index.html`.
+It rebuilds `index.html` with the SEO/PWA tags and automatically bumps the
 service worker's cache version, so installed PWAs fetch the new build instead
 of a stale cached copy. Then upload the changed files to your GitHub repo.
 
@@ -45,6 +45,6 @@ launch. Edit it on github.com (pencil icon) to change ads instantly:
 - `interstitialEvery`: show a fullscreen ad after every Nth calculation (0 = never)
 - `isTesting`: set false when using real ad unit IDs
 
-Note: the AdMob **App ID** inside the APK is separate — switching from the test
+Note: the AdMob **App ID** inside the APK is separate; switching from the test
 App ID to your real one requires one rebuild of the app (see chrona-app README).
 The ad UNIT ids above never require rebuilds.
